@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris Game Engine | Pratik Patel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand-logo" src='images/Indiana-University-Symbol.png' alt="Indiana University Logo" />
+        <a class="brand-name linkish" href="index.html#projects">Pratik Patel</a>
+      </div>
+
+      <nav class="tabs" aria-label="Primary">
+        <a class="tab" href="index.html#about">About Me</a>
+        <a class="tab" href="index.html#projects">Projects</a>
+        <a class="tab" href="index.html#experience">Experience</a>
+        <a class="tab" href="index.html#contact">Websites / Contact Me</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="card section">
+        <div class="section-head">
+          <h2>Tetris Game Engine</h2>
+          <p>Java • OOP • Java Swing • Data Structures</p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built a Java implementation of Tetris using an object-oriented, event-driven design. Developed a lightweight game framework (World + BigBang) to handle the main loop, keyboard input, timed ticks, and rendering, then implemented core Tetris mechanics including collision detection, piece rotation, line clearing, scoring, and game termination logic.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>Real-time gameplay loop with timed “ticks” and keyboard controls (left, right, down, rotate)</li>
+              <li>Piece generation and rotation system using pre-defined configuration matrices for each tetromino</li>
+              <li>Line-clear logic with row shifting and score tracking</li>
+              <li>Rendering pipeline using Java Graphics/Graphics2D with per-tetromino coloring</li>
+              <li>Game-over detection based on board fill height / spawn constraints</li>
+            </ul>
+          </div>
+
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">Java</span>
+              <span class="pill">OOP</span>
+              <span class="pill">Java Swing</span>
+              <span class="pill">Data Structures</span>
+              <span class="pill">Event-driven programming</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn ghost" href="index.html#projects">← Back to Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Pratik Patel</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
