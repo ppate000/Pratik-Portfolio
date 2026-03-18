@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tetris Game Engine | Pratik Patel</title>
+    <title>Mine Sweeper | Pratik Patel</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <header class="topbar">
       <button
@@ -26,48 +25,49 @@
 
       <div class="topbar-right">
 <nav class="tabs" aria-label="Primary">
-        <a class="tab" href="index.html#about">About Me</a>
-        <a class="tab" href="index.html#projects">Projects</a>
-        <a class="tab" href="index.html#experience">Experience</a>
-        <a class="tab" href="index.html#contact">Websites / Contact Me</a>
-      </nav>
+          <a class="tab" href="index.html#about">About</a>
+          <a class="tab" href="index.html#projects">Projects</a>
+          <a class="tab" href="index.html#experience">Experience</a>
+          <a class="tab" href="index.html#contact">Contact</a>
+        </nav>
       </div>
     </header>
 
     <main class="container">
       <div class="card section">
         <div class="section-head">
-          <h2>Tetris Game Engine</h2>
-          <p>Java • OOP • Java Swing • Data Structures</p>
+          <h2>Mine Sweeper</h2>
+          <p>SwiftUI • LazyVGrid • Difficulty Modes • Game Logic</p>
         </div>
 
         <div class="detail-grid">
           <div class="detail-card">
             <div class="detail-title">About</div>
             <p class="detail-text">
-              Built a Java implementation of Tetris using an object-oriented, event-driven design. Developed a lightweight game framework (World + BigBang) to handle the main loop, keyboard input, timed ticks, and rendering, then implemented core Tetris mechanics including collision detection, piece rotation, line clearing, scoring, and game termination logic.
+              Built a Minesweeper game in SwiftUI with dynamic board sizing, multiple difficulty levels, and full reveal / flag gameplay. The app generates randomized mine placement, computes adjacent mine counts, supports tap-to-reveal and long-press flagging, and uses a flood-reveal routine to open connected empty cells.
             </p>
           </div>
 
           <div class="detail-card">
             <div class="detail-title">What it includes</div>
             <ul class="detail-list">
-              <li>Real-time gameplay loop with timed “ticks” and keyboard controls (left, right, down, rotate)</li>
-              <li>Piece generation and rotation system using pre-defined configuration matrices for each tetromino</li>
-              <li>Line-clear logic with row shifting and score tracking</li>
-              <li>Rendering pipeline using Java Graphics/Graphics2D with per-tetromino coloring</li>
-              <li>Game-over detection based on board fill height / spawn constraints</li>
+              <li>Easy, medium, and hard modes with different board sizes and mine counts</li>
+              <li>LazyVGrid-based board rendering that scales to fit the screen</li>
+              <li>Random mine placement and adjacency counting for each cell</li>
+              <li>Tap to reveal, long press to flag, and loss handling when a mine is hit</li>
+              <li>Flood-fill reveal logic and win detection based on correctly flagged mines</li>
             </ul>
           </div>
 
           <div class="detail-card tech-stack-wide">
             <div class="detail-title">Tech Stack</div>
             <div class="pill-row">
-              <span class="pill">Java</span>
-              <span class="pill">OOP</span>
-              <span class="pill">Java Swing</span>
-              <span class="pill">Data Structures</span>
-              <span class="pill">Event-driven programming</span>
+              <span class="pill">Swift</span>
+              <span class="pill">SwiftUI</span>
+              <span class="pill">LazyVGrid</span>
+              <span class="pill">Game Logic</span>
+              <span class="pill">State Management</span>
+              <span class="pill">iOS</span>
             </div>
           </div>
         </div>
@@ -78,10 +78,7 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <span>© <span id="year"></span> Pratik Patel</span>
-    </footer>
-
+    <footer class="footer"><span>© <span id="year"></span> Pratik Patel</span></footer>
     <script src="script.js"></script>
   </body>
 </html>

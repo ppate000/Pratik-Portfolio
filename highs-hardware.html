@@ -9,17 +9,29 @@
 
   <body>
     <header class="topbar">
-      <div class="brand">
-        <img class="brand-logo" src='images/Indiana-University-Symbol.png' alt="Indiana University Logo" />
-        <a class="brand-name linkish" href="index.html#projects">Pratik Patel</a>
-      </div>
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
 
+
+      <div class="topbar-right">
       <nav class="tabs" aria-label="Primary">
         <a class="tab" href="index.html#about">About Me</a>
         <a class="tab" href="index.html#projects">Projects</a>
         <a class="tab" href="index.html#experience">Experience</a>
         <a class="tab" href="index.html#contact">Websites / Contact Me</a>
       </nav>
+      </div>
     </header>
 
     <main class="container">

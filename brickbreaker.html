@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tetris Game Engine | Pratik Patel</title>
+    <title>BrickBreaker | Pratik Patel</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <header class="topbar">
       <button
@@ -26,48 +25,49 @@
 
       <div class="topbar-right">
 <nav class="tabs" aria-label="Primary">
-        <a class="tab" href="index.html#about">About Me</a>
-        <a class="tab" href="index.html#projects">Projects</a>
-        <a class="tab" href="index.html#experience">Experience</a>
-        <a class="tab" href="index.html#contact">Websites / Contact Me</a>
-      </nav>
+          <a class="tab" href="index.html#about">About</a>
+          <a class="tab" href="index.html#projects">Projects</a>
+          <a class="tab" href="index.html#experience">Experience</a>
+          <a class="tab" href="index.html#contact">Contact</a>
+        </nav>
       </div>
     </header>
 
     <main class="container">
       <div class="card section">
         <div class="section-head">
-          <h2>Tetris Game Engine</h2>
-          <p>Java • OOP • Java Swing • Data Structures</p>
+          <h2>BrickBreaker</h2>
+          <p>SwiftUI • SpriteKit • Physics Engine • Real-Time Gameplay</p>
         </div>
 
         <div class="detail-grid">
           <div class="detail-card">
             <div class="detail-title">About</div>
             <p class="detail-text">
-              Built a Java implementation of Tetris using an object-oriented, event-driven design. Developed a lightweight game framework (World + BigBang) to handle the main loop, keyboard input, timed ticks, and rendering, then implemented core Tetris mechanics including collision detection, piece rotation, line clearing, scoring, and game termination logic.
+              Built a BrickBreaker-style iOS game by combining SwiftUI for the interface layer with SpriteKit for the real-time game scene. The project includes paddle movement, randomized ball launch direction, brick collision and removal, score and lives tracking, win / lose states, and velocity normalization to keep gameplay responsive.
             </p>
           </div>
 
           <div class="detail-card">
             <div class="detail-title">What it includes</div>
             <ul class="detail-list">
-              <li>Real-time gameplay loop with timed “ticks” and keyboard controls (left, right, down, rotate)</li>
-              <li>Piece generation and rotation system using pre-defined configuration matrices for each tetromino</li>
-              <li>Line-clear logic with row shifting and score tracking</li>
-              <li>Rendering pipeline using Java Graphics/Graphics2D with per-tetromino coloring</li>
-              <li>Game-over detection based on board fill height / spawn constraints</li>
+              <li>SpriteKit scene integrated inside a SwiftUI interface</li>
+              <li>Physics categories for ball, paddle, bricks, walls, and bottom boundary</li>
+              <li>Real-time score, lives, status text, and restart state management</li>
+              <li>Touch controls for paddle movement and tap-to-launch ball behavior</li>
+              <li>Brick destruction, win/loss conditions, and speed correction in the update loop</li>
             </ul>
           </div>
 
           <div class="detail-card tech-stack-wide">
             <div class="detail-title">Tech Stack</div>
             <div class="pill-row">
-              <span class="pill">Java</span>
-              <span class="pill">OOP</span>
-              <span class="pill">Java Swing</span>
-              <span class="pill">Data Structures</span>
-              <span class="pill">Event-driven programming</span>
+              <span class="pill">Swift</span>
+              <span class="pill">SwiftUI</span>
+              <span class="pill">SpriteKit</span>
+              <span class="pill">Physics Engine</span>
+              <span class="pill">ObservableObject</span>
+              <span class="pill">Game Development</span>
             </div>
           </div>
         </div>
@@ -78,10 +78,7 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <span>© <span id="year"></span> Pratik Patel</span>
-    </footer>
-
+    <footer class="footer"><span>© <span id="year"></span> Pratik Patel</span></footer>
     <script src="script.js"></script>
   </body>
 </html>

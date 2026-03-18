@@ -3,37 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Pratik Patel | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header class="topbar">
-      <div class="brand">
-        <img class="brand-logo" src='images/Indiana-University-Symbol.png'
-          alt="Indiana University Logo" />
-        <span class="brand-name">Pratik Patel</span>
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
+
+
+      <div class="topbar-right">
+<nav class="tabs" aria-label="Primary">
+          <button class="tab active" data-target="about" aria-selected="true">About Me</button>
+          <button class="tab" data-target="projects" aria-selected="false">Projects</button>
+          <button class="tab" data-target="experience" aria-selected="false">Experience</button>
+          <button class="tab" data-target="contact" aria-selected="false">Contact</button>
+        </nav>
       </div>
-
-
-      <nav class="tabs" aria-label="Primary">
-        <button class="tab active" data-target="about" aria-selected="true">About Me</button>
-        <button class="tab" data-target="projects" aria-selected="false">Projects</button>
-        <button class="tab" data-target="experience" aria-selected="false">Experience / Extracurricular</button>
-        <button class="tab" data-target="contact" aria-selected="false">Websites / Contact Me</button>
-      </nav>
     </header>
 
     <main class="container">
-      <!-- ABOUT -->
       <section id="about" class="panel active" role="region" aria-label="About Me">
         <div class="hero">
           <div class="hero-left">
             <div class="badge">Computer Science • Data • Business</div>
             <h1>Building clean software and data-driven solutions.</h1>
             <p class="hero-sub">
-              Undergraduate Computer Science student at Indiana University (Luddy School of Engineering), minoring in
-              Business Management and Data Science. Interested in software engineering and data science internships.
+              I am an undergraduate Computer Science student at Indiana University’s
+              Luddy School of Informatics, Computing, and Engineering, minoring in
+              Business Management and Data Science. I enjoy building projects that combine
+              problem-solving, clean code, and practical impact, whether that means
+              developing applications, improving system performance, or using data to uncover
+              insights and support better decisions.
+            </p>
+            <p class="hero-sub hero-sub-spaced">
+              I am currently seeking software engineering or data-focused internship
+              opportunities where I can keep sharpening my skills in programming,
+              analytics, and modern development tools while contributing to thoughtful,
+              high-quality products.
             </p>
             <div class="hero-actions">
               <a class="btn" href="#contact" data-jump="contact">Contact</a>
@@ -43,10 +63,7 @@
 
           <div class="hero-right">
             <div class="photo-frame">
-              <img
-                src='images/IMG_5462_Original 2.jpeg'
-                alt="Photo of Pratik Patel"
-              />
+              <img src="images/IMG_5462_Original 2.jpeg" alt="Photo of Pratik Patel" loading="eager" />
             </div>
             <div class="quick-cards">
               <div class="mini">
@@ -57,7 +74,7 @@
               <div class="mini">
                 <div class="mini-top">Focus</div>
                 <div class="mini-main">Software + Data</div>
-                <div class="mini-sub">Systems, DB, OOP</div>
+                <div class="mini-sub">Systems, databases, OOP</div>
               </div>
             </div>
           </div>
@@ -66,17 +83,17 @@
         <div class="card section">
           <div class="section-head">
             <h2>Education</h2>
-            <p>Indiana University, Luddy School of Informatics, Computing, and Engineering (Bloomington, IN)</p>
+            <p>Indiana University, Luddy School of Informatics, Computing, and Engineering</p>
           </div>
 
           <div class="two-col">
             <div class="panel-card">
-              <div class="panel-title">Major</div>
-              <div class="panel-body">BS in Computer Science</div>
+              <div class="panel-body">Major</div>
+              <div class="panel-title">BS in Computer Science</div>
             </div>
             <div class="panel-card">
-              <div class="panel-title">Minors</div>
-              <div class="panel-body">Business Management, Data Science</div>
+              <div class="panel-body">Minors</div>
+              <div class="panel-title">Business Management, Data Science</div>
             </div>
           </div>
         </div>
@@ -84,7 +101,7 @@
         <div class="card section">
           <div class="section-head">
             <h2>Technical Skills</h2>
-            <p>Languages, tools, and platforms I’ve used in coursework and projects.</p>
+            <p>Languages, tools, and platforms used across coursework and projects.</p>
           </div>
 
           <div class="pill-row">
@@ -95,23 +112,23 @@
             <span class="pill">JavaScript</span>
             <span class="pill">Python</span>
             <span class="pill">R</span>
+            <span class="pill">Swift</span>
+            <span class="pill">SwiftUI</span>
             <span class="pill">SQL</span>
-            <span class="pill">MySQL</span>
-            <span class="pill">Apache Tomcat</span>
             <span class="pill">MySQL</span>
             <span class="pill">PostgreSQL</span>
             <span class="pill">Spring Boot</span>
             <span class="pill">Git</span>
             <span class="pill">IntelliJ</span>
-            <span class="pill">pgAdmin</span>
-            <span class="pill">Visual Studio Code</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Xcode</span>
           </div>
         </div>
 
         <div class="card section">
           <div class="section-head">
             <h2>Certificates</h2>
-            <p>Marketing + growth fundamentals that support communication and execution.</p>
+            <p>Marketing and communication credentials that complement technical work.</p>
           </div>
 
           <div class="pill-row">
@@ -122,141 +139,185 @@
         </div>
       </section>
 
-      <!-- PROJECTS -->
       <section id="projects" class="panel" role="region" aria-label="Projects">
         <div class="card section">
           <div class="section-head">
             <h2>Projects</h2>
-            <p>Click the project to open the full details page.</p>
+            <p>Selected software and app projects. Open any project for more detail.</p>
           </div>
 
-          <a class="project-link" href="highs-hardware.html" aria-label="Open High’s Hardware Store Management System project page">
+          <a class="project-link" href="highs-hardware.html" aria-label="Open High's Hardware Store Management System project page">
             <div class="project-row">
               <div class="project-left">
                 <div class="project-title">High’s Hardware Store Management System</div>
                 <div class="project-meta">Java • MySQL • OOP • Data Structures</div>
               </div>
-              <div class="project-right">
-                <span class="arrow" aria-hidden="true">→</span>
-              </div>
+              <div class="project-right"><span class="arrow" aria-hidden="true">→</span></div>
             </div>
           </a>
 
-          <a class="project-link" href="Tetris-Game-Engine.html" aria-label="Tetris Game Engine">
+          <a class="project-link" href="Tetris-Game-Engine.html" aria-label="Open Tetris Game Engine project page">
             <div class="project-row">
               <div class="project-left">
                 <div class="project-title">Tetris Game Engine</div>
                 <div class="project-meta">Java • OOP • Java Swing • Data Structures</div>
               </div>
-              <div class="project-right">
-                <span class="arrow" aria-hidden="true">→</span>
+              <div class="project-right"><span class="arrow" aria-hidden="true">→</span></div>
+            </div>
+          </a>
+
+          <a class="project-link" href="flashcards.html" aria-label="Open Flashcards project page">
+            <div class="project-row">
+              <div class="project-left">
+                <div class="project-title">Flashcards</div>
+                <div class="project-meta">SwiftUI • UserDefaults • Animations • Study UI</div>
               </div>
+              <div class="project-right"><span class="arrow" aria-hidden="true">→</span></div>
+            </div>
+          </a>
+
+          <a class="project-link" href="minesweeper.html" aria-label="Open Minesweeper project page">
+            <div class="project-row">
+              <div class="project-left">
+                <div class="project-title">Mine Sweeper</div>
+                <div class="project-meta">SwiftUI • LazyVGrid • Difficulty Modes • Game Logic</div>
+              </div>
+              <div class="project-right"><span class="arrow" aria-hidden="true">→</span></div>
+            </div>
+          </a>
+
+          <a class="project-link" href="game2048.html" aria-label="Open 2048 project page">
+            <div class="project-row">
+              <div class="project-left">
+                <div class="project-title">Game2048</div>
+                <div class="project-meta">SwiftUI • Swipe Gestures • Score Tracking • UserDefaults</div>
+              </div>
+              <div class="project-right"><span class="arrow" aria-hidden="true">→</span></div>
+            </div>
+          </a>
+
+          <a class="project-link" href="brickbreaker.html" aria-label="Open BrickBreaker project page">
+            <div class="project-row">
+              <div class="project-left">
+                <div class="project-title">BrickBreaker</div>
+                <div class="project-meta">SwiftUI • SpriteKit • Physics Engine • Real-Time Gameplay</div>
+              </div>
+              <div class="project-right"><span class="arrow" aria-hidden="true">→</span></div>
             </div>
           </a>
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
       <section id="experience" class="panel" role="region" aria-label="Experience">
         <div class="card section">
           <div class="section-head">
             <h2>Experience</h2>
             <p>Roles where I created, supported, and improved outcomes across teams.</p>
           </div>
-        <div class="exp-grid">
-          <div class="exp-left">
-            <div class="timeline">
-              <div class="role">
-                <div class="role-head">
-                  <div class="role-logo">
-                    <img src='images/logo-png.png' alt="iDharma logo" />
+
+          <div class="exp-grid">
+            <div class="exp-left">
+              <div class="timeline">
+                <div class="role">
+                  <div class="role-head">
+                    <div class="role-logo">
+                      <img src="images/logo-png.png" alt="iDharma logo" loading="lazy" />
+                    </div>
+                    <div class="role-text">
+                      <h3>Marketing Intern — iDharma</h3>
+                      <div class="meta">Greenwood, IN · Jun 2025 – Aug 2025</div>
+                    </div>
                   </div>
-                  <div class="role-text">
-                    <h3>Marketing Intern — iDharma</h3>
-                    <div class="meta">Greenwood, IN · Jun 2025 – Aug 2025</div>
+                  <ul>
+                    <li>Produced and launched AI-focused short-form video content across YouTube, Facebook, and LinkedIn, helping drive a 40% increase in engagement.</li>
+                    <li>Supported cross-channel distribution around key AI industry events, contributing to a 25% boost in views during event-related windows.</li>
+                    <li>Tracked performance metrics weekly and iterated on hooks, pacing, and messaging to improve average watch time by 20%.</li>
+                    <li>Collaborated with leadership to keep branding and content strategy consistent while balancing speed and quality.</li>
+                  </ul>
+                </div>
+
+                <div class="role">
+                  <div class="role-head">
+                    <div class="role-logo">
+                      <img src="images/Indiana_Hoosiers_logo.svg.png" alt="Indiana University logo" loading="lazy" />
+                    </div>
+                    <div class="role-text">
+                      <h3>International Programs Intern — Luddy Student Engagement</h3>
+                      <div class="meta">Bloomington, IN · Sep 2023 – May 2024</div>
+                    </div>
                   </div>
+                  <ul>
+                    <li>Assisted in planning and executing international student community events including Diwali, Halloween, Thanksgiving, and Christmas.</li>
+                    <li>Coordinated event setup logistics including room preparation, materials, check-in support, and day-of execution.</li>
+                    <li>Worked closely with staff and student team members to improve event experience through better organization and communication.</li>
+                    <li>Helped create a more inclusive campus environment by supporting events that strengthened student connection.</li>
+                  </ul>
                 </div>
-                <ul>
-                  <li>Produced and launched AI-focused video content across YouTube, Facebook, and LinkedIn, driving a 40% engagement increase.</li>
-                  <li>Supported cross-channel distribution aligned with key AI industry events, boosting event-window views by 25%.</li>
-                  <li>Tracked performance and iterated weekly, improving average watch time by 20% and driving incremental sign-ups.</li>
-                </ul>
-              </div>
-              <div class="role">
-                <div class="role-head">
-                  <div class="role-logo">
-                    <img src='images/Indiana_Hoosiers_logo.svg.png' alt="IU logo" />
+
+                <div class="role">
+                  <div class="role-head">
+                    <div class="role-logo">
+                      <img src="images/aksharderi-color.png" alt="BAPS logo" loading="lazy" />
+                    </div>
+                    <div class="role-text">
+                      <h3>Regional Coordinator — BAPS</h3>
+                      <div class="meta">Aug 2020 – Present</div>
+                    </div>
                   </div>
-                  <div class="role-text">
-                    <h3>International Programs Intern — Luddy Student Engagement (Indiana University)</h3> 
-                    <div class="meta">Bloomington, IN · Sep 2023 – May 2024</div>
-                  </div> 
+                  <ul>
+                    <li>Lead and coordinate a regional volunteer team to run youth development programs and recurring events.</li>
+                    <li>Managed logistics and communication for large-scale regional events with 500+ participants.</li>
+                    <li>Collaborated with leadership to create digital and multimedia materials for educational and cultural initiatives.</li>
+                    <li>Built long-term strengths in leadership, delegation, planning, and stakeholder communication.</li>
+                  </ul>
                 </div>
-                <ul> 
-                  <li>Assisted in organizing and setting up international student events including Diwali, Halloween, Thanksgiving, and Christmas.</li> 
-                  <li>Collaborated with a team to create a welcoming environment and improve participant experience.</li> 
-                  <li>Managed event logistics to ensure smooth execution and engagement.</li> 
-                </ul> 
-                </div>
-              <div class="role">
-                <div class="role-head">
-                  <div class="role-logo">
-                    <img src='images/aksharderi-color.png' alt="BAPS Logo" />
-                  </div>
-                <div class="role-text">
-                  <h3>Regional Coordinator — BAPS</h3>
-                  <div class="meta">Aug 2020 – Present</div>
-                </div>
-                </div>
-                <ul>
-                  <li>Lead and coordinate a regional volunteer team to run youth development programs and events.</li>
-                  <li>Coordinated logistics and communications for events with 500+ participants to drive timely completion and engagement.</li>
-                  <li>Created digital and multimedia content for educational and cultural initiatives.</li>
-                </ul>
               </div>
             </div>
+
+            <aside class="exp-right">
+              <div class="detail-card">
+                <div class="detail-title extra-head">Extracurriculars</div>
+
+                <div class="extra-item">
+                  <div class="extra-title">Collegiate Entrepreneurs’ Organization</div>
+                  <div class="extra-body">
+                    <ul>
+                      <li>Explore startup ideas, networking, and venture-building concepts.</li>
+                      <li>Participate in workshops and speaker events centered on entrepreneurship and business skills.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="extra-item">
+                  <div class="extra-title">Data Visualization Club</div>
+                  <div class="extra-body">
+                    <ul>
+                      <li>Create visuals and dashboards with a focus on clarity and storytelling.</li>
+                      <li>Use Power BI and R to analyze real-world data and highlight trends.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="extra-item">
+                  <div class="extra-title">Principles of Cybersecurity Club</div>
+                  <div class="extra-body">
+                    <ul>
+                      <li>Learn cybersecurity fundamentals, common threats, and security best practices.</li>
+                      <li>Participate in hands-on exercises that reinforce secure systems thinking.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </aside>
           </div>
-
-          <!-- RIGHT: Extracurriculars (new) -->
-          <aside class="exp-right">
-            <div class="detail-card">
-              <div class="detail-title extra-head">Extracurriculars</div>
-
-              <div class="extra-item">
-                <div class="extra-title">Collegiate Entrepreneurs’ Organization</div>
-                <div class="extra-body"><li>Club exploring startup concepts, networking, and building ideas.</li>
-                                        <li>Participate in entrepreneurial workshops and speaker events focused on business skills and startup creation.</li>
-
-                </div>
-              </div>
-
-              <div class="extra-item">
-                <div class="extra-title">Data Visualization Club</div>
-                <div class="extra-body"><li>Creating clear visuals and dashboards from data, with an emphasis on storytelling and clarity.</li>
-                                        <li>Create interactive dashboards using PowerBI to analyze real-world datasets.</li>
-                                        <li>Explore data visualization techniques using R (ggplot2, tidyverse) to uncover trends</li>
-                </div>
-              </div>
-
-              <div class="extra-item">
-                <div class="extra-title">Principles of Cybersecurity Club</div>
-                <div class="extra-body"><li>Learning cybersecurity fundamentals, real-world threats, and best practices through discussions and activities.</li>
-                                        <li>Learn about encryption algorithms, penetration testing, and network security.</li>
-                                        <li>Participate in hands-on exercises to identify vulnerabilities in simulated environments.</li>                      
-                </div>
-              </div>
-            </div>
-          </aside>
         </div>
       </section>
 
-
-      <!-- CONTACT -->
-      <section id="contact" class="panel active" role="region" aria-label="Contact Me">
+      <section id="contact" class="panel" role="region" aria-label="Contact Me">
         <div class="card section">
           <div class="section-head">
             <h2>Websites / Contact Me</h2>
-            <p>Add your icons and update links if you want. These are ready to use.</p>
+            <p>Ways to connect and view more of my work.</p>
           </div>
 
           <div class="contact-grid">
@@ -302,11 +363,6 @@
         </div>
       </section>
     </main>
-
-    <footer class="footer">
-      <span>© <span id="year"></span> Pratik Patel</span>
-    </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
