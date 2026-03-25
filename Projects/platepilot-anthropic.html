@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlatePilot AI Recipe Search | Pratik Patel</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
+
+      <div class="topbar-right">
+        <nav class="tabs" aria-label="Primary">
+          <a class="tab" href="../index.html#about">About Me</a>
+          <a class="tab" href="../index.html#projects">Projects</a>
+          <a class="tab" href="../index.html#experience">Experience</a>
+          <a class="tab" href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card section">
+        <div class="section-head">
+          <h2>PlatePilot AI Recipe Search</h2>
+          <p>JavaScript • Anthropic API • Web Search • Ingredient Scaling</p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built an AI-powered recipe search experience that uses the Anthropic API with web search to find recipe options from across the web, then lets the user choose a recipe and scale the ingredients to a target serving size. The app manages search results, selection flow, serving adjustments, and recipe rendering in a polished single-page interface.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>Recipe discovery powered by Anthropic with web search</li>
+              <li>Interactive flow for search, recipe selection, and serving-size adjustment</li>
+              <li>Automatic ingredient scaling based on selected servings</li>
+              <li>Result cards with source, timing, difficulty, and serving metadata</li>
+              <li>Single-page UI with loading states, error states, and reset controls</li>
+            </ul>
+          </div>
+
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">JavaScript</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">Anthropic API</span>
+              <span class="pill">Web Search</span>
+              <span class="pill">JSON Parsing</span>
+              <span class="pill">Single-Page UI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn ghost" href="../index.html#projects">← Back to Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"><span>© <span id="year"></span> Pratik Patel</span></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

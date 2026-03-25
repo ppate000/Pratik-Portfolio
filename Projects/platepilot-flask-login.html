@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlatePilot Recipe Platform | Pratik Patel</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
+
+      <div class="topbar-right">
+        <nav class="tabs" aria-label="Primary">
+          <a class="tab" href="../index.html#about">About Me</a>
+          <a class="tab" href="../index.html#projects">Projects</a>
+          <a class="tab" href="../index.html#experience">Experience</a>
+          <a class="tab" href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card section">
+        <div class="section-head">
+          <h2>PlatePilot Recipe Platform</h2>
+          <p>Python • Flask • SQLite • User Authentication • Email Verification</p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built a full-stack recipe platform with Flask where users can create accounts, verify their email, log in, browse recipes, and add or edit their own entries. The app uses SQLite for persistence, server-rendered templates for the interface, seeded starter recipes for browsing, and route protection so only authenticated users can access the main recipe workflow.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>Account signup, login, logout, and protected routes with Flask sessions</li>
+              <li>6-digit email verification flow with pending-user handling before account creation</li>
+              <li>Recipe browsing, search, detail pages, and user-owned recipe editing</li>
+              <li>SQLite-backed storage for users, pending users, and recipes</li>
+              <li>CSV seeding to preload starter recipes into the platform</li>
+            </ul>
+          </div>
+
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">Flask</span>
+              <span class="pill">SQLite</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">Jinja</span>
+              <span class="pill">Werkzeug</span>
+              <span class="pill">Resend API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn ghost" href="../index.html#projects">← Back to Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"><span>© <span id="year"></span> Pratik Patel</span></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

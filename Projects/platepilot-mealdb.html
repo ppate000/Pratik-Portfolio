@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlatePilot Meal Search | Pratik Patel</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
+
+      <div class="topbar-right">
+        <nav class="tabs" aria-label="Primary">
+          <a class="tab" href="../index.html#about">About Me</a>
+          <a class="tab" href="../index.html#projects">Projects</a>
+          <a class="tab" href="../index.html#experience">Experience</a>
+          <a class="tab" href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card section">
+        <div class="section-head">
+          <h2>PlatePilot Meal Search</h2>
+          <p>JavaScript • TheMealDB API • Search Filters • Responsive UI</p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built a static recipe search app powered by TheMealDB API that lets users search meals by name, ingredient, category, or cuisine area. The interface supports random meal discovery, dynamic result rendering, and detailed recipe views with ingredients, instructions, tags, and video links, making it easy to explore meals without needing a backend.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>Search by meal name with dynamic result cards</li>
+              <li>Ingredient, category, and area filtering using live API calls</li>
+              <li>Random meal generation for quick recipe discovery</li>
+              <li>Detailed meal view with ingredients, instructions, tags, and YouTube link</li>
+              <li>Client-side caching for meal details to reduce repeated requests</li>
+            </ul>
+          </div>
+
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">JavaScript</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">REST API</span>
+              <span class="pill">TheMealDB</span>
+              <span class="pill">Responsive Design</span>
+              <span class="pill">Client-Side Caching</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn ghost" href="../index.html#projects">← Back to Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"><span>© <span id="year"></span> Pratik Patel</span></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
