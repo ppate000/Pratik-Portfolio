@@ -3,6 +3,8 @@ const panels = Array.from(document.querySelectorAll('.panel'));
 const themeToggle = document.getElementById('theme-toggle');
 const yearEl = document.getElementById('year');
 const themeState = document.getElementById('theme-state');
+const projectPageTabs = Array.from(document.querySelectorAll('.topbar .tab[href*="index.html#"]'));
+const isProjectDetailPage = document.body.classList.contains('project-page') || document.querySelector('.detail-grid') !== null;
 
 function isIndexPage() {
   return tabs.length > 0 && panels.length > 0;
@@ -49,6 +51,28 @@ function initTabs() {
   const initial = (window.location.hash || '#about').replace('#', '');
   const targetExists = panels.some((panel) => panel.id === initial);
   setActivePanel(targetExists ? initial : 'about');
+
+  window.addEventListener('hashchange', () => {
+    const nextTarget = (window.location.hash || '#about').replace('#', '');
+    if (panels.some((panel) => panel.id === nextTarget)) {
+      setActivePanel(nextTarget);
+    }
+  });
+}
+
+function initProjectPageTabs() {
+  if (isIndexPage() || projectPageTabs.length === 0 || !isProjectDetailPage) return;
+
+  projectPageTabs.forEach((tab) => {
+    const href = tab.getAttribute('href') || '';
+    if (href.endsWith('index.html#projects')) {
+      tab.classList.add('active');
+      tab.setAttribute('aria-current', 'page');
+    } else {
+      tab.classList.remove('active');
+      tab.removeAttribute('aria-current');
+    }
+  });
 }
 
 function applyTheme(theme) {
@@ -84,4 +108,5 @@ if (yearEl) {
 }
 
 initTabs();
+initProjectPageTabs();
 initTheme();

@@ -697,3 +697,24 @@ img {
 .btn:focus-visible {
   transform: translateY(-2px);
 }
+
+
+.detail-card,
+.tech-stack-wide {
+  background: var(--surface-strong);
+}
+
+.detail-actions .btn {
+  min-width: 190px;
+}
+
+.topbar .tab[aria-current="page"] {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: transparent;
+}
+
+.detail-text,
+.detail-list {
+  font-size: 0.98rem;
+}
