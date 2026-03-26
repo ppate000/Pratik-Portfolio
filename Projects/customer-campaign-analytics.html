@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
     <title>Customer Campaign Analytics | Pratik Patel</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
+
   <body>
     <header class="topbar">
-      <button id="theme-toggle" class="theme-toggle topbar-toggle" type="button" aria-label="Theme toggle: Light mode" title="Toggle light and dark mode">
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
         <span class="theme-toggle-icon" aria-hidden="true">◐</span>
         <span class="theme-toggle-copy">
           <span class="theme-toggle-label">Theme</span>
@@ -20,76 +26,61 @@
       <div class="topbar-right">
         <nav class="tabs" aria-label="Primary">
           <a class="tab" href="../index.html#about">About Me</a>
-          <a class="tab active" href="../index.html#projects" aria-current="page">Projects</a>
+          <a class="tab" href="../index.html#projects">Projects</a>
           <a class="tab" href="../index.html#experience">Experience</a>
-          <a class="tab" href="../index.html#contact">Contact</a>
+          <a class="tab" href="../index.html#contact">Websites / Contact Me</a>
         </nav>
       </div>
     </header>
 
-    <main class="container project-page">
-      <section class="card section project-hero-card">
+    <main class="container">
+      <div class="card section">
         <div class="section-head">
-          <h1>Customer Campaign Analytics</h1>
-          <p>Static analytics dashboard that presents campaign, segment, and customer performance through a portfolio-ready reporting interface.</p>
+          <h2>Customer Campaign Analytics</h2>
+          <p>HTML • CSS • JavaScript • SQL • Analytics Dashboard</p>
         </div>
 
-        <div class="pill-row">
-          <span class="pill">HTML</span>
-          <span class="pill">CSS</span>
-          <span class="pill">JavaScript</span>
-          <span class="pill">SQL</span>
-          <span class="pill">Dashboard Design</span>
-        </div>
-      </section>
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built a static marketing analytics dashboard that presents campaign, segment, and customer performance in a clean, portfolio-ready interface. Structured the project to simulate a real business reporting tool by combining SQL-style data modeling concepts with frontend rendering, making it easy to showcase analytical thinking, dashboard design, and web development skills in one project.
+            </p>
+          </div>
 
-      <section class="card section">
-        <div class="section-head">
-          <h2>Overview</h2>
-          <p>This project is a portfolio-style analytics dashboard built as a static site. It displays campaign, segment, and customer insights using preloaded data, making it easy to deploy on GitHub Pages without needing a backend server.</p>
-        </div>
-      </section>
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>Dashboard-style summaries for campaign, customer, and segment performance</li>
+              <li>JavaScript-driven rendering of preloaded analytics data for an interactive feel without a backend</li>
+              <li>Business-focused reporting layout designed to communicate insights clearly and professionally</li>
+              <li>Static site structure that can be deployed easily on GitHub Pages</li>
+              <li>Project framing that blends software engineering, SQL logic, and analytics presentation</li>
+            </ul>
+          </div>
 
-      <section class="card section">
-        <div class="section-head">
-          <h2>What it demonstrates</h2>
-        </div>
-        <div class="two-col">
-          <div class="panel-card">
-            <div class="panel-title">Analytics presentation</div>
-            <div class="panel-body">Organizes marketing performance metrics into a clean dashboard format with tables, summaries, and trend views.</div>
-          </div>
-          <div class="panel-card">
-            <div class="panel-title">Frontend data rendering</div>
-            <div class="panel-body">Uses JavaScript to render preloaded analytics data dynamically so the interface still feels interactive without a backend.</div>
-          </div>
-          <div class="panel-card">
-            <div class="panel-title">Portfolio-ready deployment</div>
-            <div class="panel-body">Structured as a fully static project that can be hosted directly on GitHub Pages using plain HTML, CSS, and JavaScript.</div>
-          </div>
-          <div class="panel-card">
-            <div class="panel-title">Business relevance</div>
-            <div class="panel-body">Shows how software and data can be combined to communicate campaign results, customer value, and segment performance clearly.</div>
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">SQL</span>
+              <span class="pill">Dashboard Design</span>
+              <span class="pill">Analytics</span>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="card section">
-        <div class="section-head">
-          <h2>Key features</h2>
+        <div class="detail-actions">
+          <a class="btn ghost" href="../index.html#projects">← Back to Projects</a>
         </div>
-        <ul class="project-list">
-          <li>Dashboard-style summaries for campaign and customer performance</li>
-          <li>Static deployment with no backend requirement</li>
-          <li>Interactive filtering and rendering with JavaScript</li>
-          <li>Clean, professional interface designed for portfolio presentation</li>
-        </ul>
-      </section>
-
-      <div class="project-back">
-        <a class="back-link" href="../index.html#projects">← Back to Projects</a>
       </div>
     </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Pratik Patel</span>
+    </footer>
 
     <script src="../script.js"></script>
   </body>
