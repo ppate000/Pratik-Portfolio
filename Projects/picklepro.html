@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PicklePro | Pratik Patel</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
+
+      <div class="topbar-right">
+        <nav class="tabs" aria-label="Primary">
+          <a class="tab" href="../index.html#about">About Me</a>
+          <a class="tab active" href="../index.html#projects" aria-current="page">Projects</a>
+          <a class="tab" href="../index.html#experience">Experience</a>
+          <a class="tab" href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card section">
+        <div class="section-head">
+          <h2>PicklePro</h2>
+          <p>Swift • SwiftUI • SwiftData • MapKit • CoreLocation • Accelerate</p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built a native iOS pickleball tracking app for logging singles and doubles matches, reviewing match history, analyzing player stats, and mapping saved court locations. The app combines local persistence, court-based match records, profile setup, score validation, and dashboard-style performance summaries in a clean SwiftUI interface.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>SwiftData model for storing match history, scores, player names, match type, winners, dates, and court locations</li>
+              <li>Singles and doubles match logging with team-based player fields and editable match records</li>
+              <li>Pickleball-specific validation for unique player names, non-negative scores, no ties, higher-score winner, and win-by-two logic</li>
+              <li>Profile setup for user name, preferred hand, skill level, home court, and singles or doubles preference</li>
+              <li>Stats dashboard with win rate, win/loss record, average points scored, points allowed, streaks, opponent records, and court records</li>
+              <li>MapKit court view that displays saved court pins and court-specific match summaries</li>
+              <li>CSV export, demo data loading, onboarding flow, and local preference storage through AppStorage</li>
+            </ul>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">Result</div>
+            <p class="detail-text">
+              Turned a basic match logger into a more complete mobile product with persistence, validation, analytics, profile personalization, mapping, and export functionality. The project demonstrates practical iOS development across SwiftUI state management, SwiftData storage, MapKit integration, and reusable domain logic.
+            </p>
+          </div>
+
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">Swift</span>
+              <span class="pill">SwiftUI</span>
+              <span class="pill">SwiftData</span>
+              <span class="pill">MapKit</span>
+              <span class="pill">CoreLocation</span>
+              <span class="pill">Accelerate</span>
+              <span class="pill">AppStorage</span>
+              <span class="pill">Canvas</span>
+              <span class="pill">Xcode</span>
+              <span class="pill">iOS Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn ghost" href="../index.html#projects">← Back to Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Pratik Patel</span>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ministry of Jokes | Pratik Patel</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
+
+
+      <div class="topbar-right">
+      <nav class="tabs" aria-label="Primary">
+        <a class="tab" href="../index.html#about">About Me</a>
+        <a class="tab active" href="../index.html#projects" aria-current="page">Projects</a>
+        <a class="tab" href="../index.html#experience">Experience</a>
+        <a class="tab" href="../index.html#contact">Contact</a>
+      </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card section">
+        <div class="section-head">
+          <h2>Ministry of Jokes</h2>
+          <p>Python • Flask • PostgreSQL • SQLAlchemy • React • Docker • REST API</p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built a full-stack joke management platform with a Flask REST API, PostgreSQL database, SQLAlchemy models, 
+              authentication, ratings, search, pagination, analytics, and admin moderation. The project focuses on backend 
+              architecture, database relationships, protected routes, API design, Dockerized local development, and automated testing.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>Flask REST API with structured success and error responses</li>
+              <li>PostgreSQL database with users, jokes, ratings, relationships, indexes, and constraints</li>
+              <li>Authentication with hashed passwords and protected user sessions</li>
+              <li>Admin-only moderation routes for managing flagged or inappropriate jokes</li>
+              <li>Search, filtering, sorting, and pagination for database-backed joke browsing</li>
+              <li>Analytics endpoints using joins, grouping, and aggregation queries</li>
+              <li>Rating system with a unique constraint to prevent duplicate ratings from the same user</li>
+              <li>Docker Compose setup for the backend, frontend, PostgreSQL database, and local AI rating service</li>
+              <li>pytest test suite and GitHub Actions workflow for validation and continuous integration</li>
+            </ul>
+          </div>
+
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">Flask</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">SQLAlchemy</span>
+              <span class="pill">React</span>
+              <span class="pill">Vite</span>
+              <span class="pill">Docker</span>
+              <span class="pill">pytest</span>
+              <span class="pill">GitHub Actions</span>
+              <span class="pill">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn ghost" href="../index.html#projects">← Back to Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Pratik Patel</span>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

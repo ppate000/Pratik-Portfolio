@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Rating Prediction | Pratik Patel</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
+
+      <div class="topbar-right">
+        <nav class="tabs" aria-label="Primary">
+          <a class="tab" href="../index.html#about">About Me</a>
+          <a class="tab" href="../index.html#projects">Projects</a>
+          <a class="tab" href="../index.html#experience">Experience</a>
+          <a class="tab" href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card section">
+        <div class="section-head">
+          <h2>Movie Rating Prediction</h2>
+          <p>Python • pandas • scikit-learn • Machine Learning • Regression • Streamlit</p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built a machine learning regression pipeline that predicts TMDB movie vote averages using structured movie metadata. The project loads and merges TMDB movie and credits datasets, engineers features from financial, release, cast, genre, director, and production-company data, compares multiple regression models, and saves evaluation outputs for model analysis and recruiter-facing presentation.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>End-to-end pandas pipeline for cleaning, merging, and preparing TMDB movie data</li>
+              <li>Feature engineering from budget, revenue, runtime, popularity, release date, genres, cast, director, and production companies</li>
+              <li>Model comparison across baseline, Linear Regression, Ridge, Lasso, Decision Tree, Random Forest, and Gradient Boosting models</li>
+              <li>GridSearchCV tuning and evaluation using RMSE, MAE, R², SSE, and cross-validation RMSE</li>
+              <li>Saved prediction outputs, largest-error analysis, feature importance files, and visualization charts</li>
+              <li>Optional Streamlit dashboard for entering movie metadata and generating live rating predictions</li>
+            </ul>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">Result</div>
+            <p class="detail-text">
+              The strongest tested model was a Random Forest Regressor, which reached a test RMSE of 0.6087 and improved RMSE by about 29% compared with the baseline mean predictor. The project also includes feature-importance and prediction-error analysis to explain model behavior and limitations.
+            </p>
+          </div>
+
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">pandas</span>
+              <span class="pill">NumPy</span>
+              <span class="pill">scikit-learn</span>
+              <span class="pill">matplotlib</span>
+              <span class="pill">joblib</span>
+              <span class="pill">Streamlit</span>
+              <span class="pill">Regression Modeling</span>
+              <span class="pill">Feature Engineering</span>
+              <span class="pill">GridSearchCV</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn ghost" href="../index.html#projects">← Back to Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Pratik Patel</span>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
