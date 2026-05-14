@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C++ Product Catalog and Recommendation System | Pratik Patel</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <button
+        id="theme-toggle"
+        class="theme-toggle topbar-toggle"
+        type="button"
+        aria-label="Theme toggle: Light mode"
+        title="Toggle light and dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-copy">
+          <span class="theme-toggle-label">Theme</span>
+          <span class="theme-toggle-state" id="theme-state">Light</span>
+        </span>
+      </button>
+
+      <div class="topbar-right">
+        <nav class="tabs" aria-label="Primary">
+          <a class="tab" href="../index.html#about">About Me</a>
+          <a class="tab active" href="../index.html#projects" aria-current="page">Projects</a>
+          <a class="tab" href="../index.html#experience">Experience</a>
+          <a class="tab" href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card section">
+        <div class="section-head">
+          <h2>C++ Product Catalog and Recommendation System</h2>
+          <p>C++ • OOP • STL • File I/O • Inventory Tracking • Recommendation Logic</p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <div class="detail-title">About</div>
+            <p class="detail-text">
+              Built a terminal-based C++ product catalog and recommendation system inspired by e-commerce platforms. The project manages products, users, ratings, inventory, search, and recommendations while storing data through local text files for persistence between runs.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">What it includes</div>
+            <ul class="detail-list">
+              <li>File-backed product database with add, update, delete, view, and search functionality</li>
+              <li>User management and product rating system for storing user-product preferences</li>
+              <li>Inventory tracking with quantity updates and low-stock visibility</li>
+              <li>Search by product name or category using case-insensitive matching</li>
+              <li>Average rating calculations to summarize product performance</li>
+              <li>Simple recommendation logic based on user-product ratings and similarity-style ranking</li>
+              <li>Structured object-oriented design using Product, User, Rating, and CatalogSystem classes</li>
+              <li>Local persistence through products, users, and ratings text files</li>
+            </ul>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">Why it matters</div>
+            <p class="detail-text">
+              This project shows practical C++ experience beyond basic syntax. It combines object-oriented programming, STL containers, file I/O, menu-driven application design, and recommendation logic in a project that is easy to demo and explain to recruiters.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-title">How to run</div>
+            <ul class="detail-list">
+              <li>Open the project folder in VS Code or Terminal</li>
+              <li>Compile with g++ using C++17</li>
+              <li>Run the generated catalog executable from the same folder as the text data files</li>
+              <li>Use the menu to view products, search by category/name, add ratings, update inventory, and generate recommendations</li>
+            </ul>
+          </div>
+
+          <div class="detail-card tech-stack-wide">
+            <div class="detail-title">Tech Stack</div>
+            <div class="pill-row">
+              <span class="pill">C++</span>
+              <span class="pill">Object-Oriented Programming</span>
+              <span class="pill">STL Vectors</span>
+              <span class="pill">unordered_map</span>
+              <span class="pill">File I/O</span>
+              <span class="pill">Terminal UI</span>
+              <span class="pill">Inventory Tracking</span>
+              <span class="pill">Recommendation Logic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn ghost" href="../index.html#projects">← Back to Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
